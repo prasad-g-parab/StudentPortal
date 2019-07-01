@@ -1,0 +1,17 @@
+﻿@model StudentPortal.Models.User
+
+
+<div>
+
+    <h1>Login Page......</h1>
+</div>
+
+<form asp-action="login" asp-controller="auth">
+    <label asp-for="email"></label>
+    <input asp-for="email" placeholder="Your name goes here" />
+
+    <label asp-for="password"></label>
+    <input asp-for="password" placeholder="Your name goes here" />
+    
+    <input type="submit" />
+</form>

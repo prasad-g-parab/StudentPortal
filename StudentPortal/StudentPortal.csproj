@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.1.2" PrivateAssets="All" />
+    <PackageReference Include="EntityFramework" Version="6.2.0" />
+    <PackageReference Include="MySql.Data.Entity" Version="6.10.8" />
+    <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="2.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Models\DAL\" />
+    <Folder Include="Views\auth\" />
+    <Folder Include="Views\Student\" />
+    <Folder Include="Views\Faculty\" />
+    <Folder Include="Views\Admin\" />
+    <Folder Include="Views\auth\css\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Remove="Views\auth\home.cshtml" />
+    <Content Remove="Views\Student\form.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="Models\Faculty.cs" />
+    <Compile Remove="Models\Admin.cs" />
+  </ItemGroup>
+</Project>
